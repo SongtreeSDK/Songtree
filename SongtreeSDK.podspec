@@ -17,16 +17,9 @@ Pod::Spec.new do |s|
 
 s.name         = "SongtreeSDK"
 s.version      = "0.0.1"
-s.summary      = "Testin my framework pod"
+s.summary      = "Songtree SDK for iOS"
 
-s.description  = <<-DESC
-A longer description of SongtreeCocoaPods in Markdown format.
-
-* Think: Why did you write this? What is the focus? What does it do?
-* CocoaPods will be using this to generate tags, and improve search results.
-* Try to keep it short, snappy and to the point.
-* Finally, don't worry about the indent, CocoaPods strips it!
-DESC
+s.description  = "Songtree is an online community for collaborative music making"
 
 s.homepage     = "https://github.com/SongtreeSDK/Songtree"
 
@@ -38,7 +31,7 @@ s.homepage     = "https://github.com/SongtreeSDK/Songtree"
 #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
 #
 
-s.license      = { :type => "MIT" }
+s.license      = { :type => "Apache License, Version 2.0" , :file =>"License" }
 
 
 # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -51,7 +44,7 @@ s.license      = { :type => "MIT" }
 #  profile URL.
 #
 
-s.author             = { "" => "" }
+s.author             = "Songtree"
 # Or just: s.author    = ""
 # s.authors            = { "" => "" }
 # s.social_media_url   = "http://twitter.com/"
