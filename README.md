@@ -6,25 +6,35 @@ With Songtree SDK you can simply import into your music app a backing track crea
 
 ## Setup
 
-1)Include Framework Header #import <SongtreeSDK/SongtreeController.h>
+1)Include Framework Header 
+<pre>
+#import <SongtreeSDK/SongtreeController.h>
+</pre>
 
 2)Instantiate the SongtreeController in your main UIViewController
+<pre>
 SongtreeController  *controller=[SongtreeController instance];
 controller.delegate=yourViewController;
 controller.appAgent=@"your app name";
+</pre>
 
 3)Implement the mandatory delegate method
+<pre>
 -(bool)importAudioFile:songID:fromViewController:
 -(NSString *)getParentId
 -(void)OnSongUploadRequested:fromView:parameters:
+</pre>
 
 4)Use the SongtreeController method to show the Community, open the Share View and upload your audio file:
+<pre>
 -(void)openSongtreeCommunity:shareAfterUpload:fromViewController:
 -(void)OpenUploadPage:
 -(void)uploadToSongtree:parameters:parentViewController:
-
+</pre>
 
 ## External dependencies (Not needed if you use CocoaPods)
 5)Download OAuth2Client framework and add it to your project
 https://github.com/nxtbgthng/OAuth2Client
 
+## CocoaPods
+<pre>pod 'SongtreeSDK', '~> 0.0'</pre>
