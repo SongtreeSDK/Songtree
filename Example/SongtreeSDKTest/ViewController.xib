@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="SbM-Ry-BJt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="431" height="465"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6UK-Se-BOf">
+                    <rect key="frame" x="76" y="129" width="279" height="178"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvc-oV-T2b">
+                            <rect key="frame" x="21" y="5" width="239" height="51"/>
+                            <color key="backgroundColor" red="0.23137254900000001" green="0.64313725489999995" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="51" id="MWV-a0-bom"/>
+                                <constraint firstAttribute="width" constant="239" id="qrR-2i-9F3"/>
+                            </constraints>
+                            <state key="normal" title="Open SONGTREE community">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="OpenSongtreeCommunity:" destination="-1" eventType="touchUpInside" id="eXO-2q-y4T"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ae2-Oa-7cw">
+                            <rect key="frame" x="21" y="65" width="239" height="48"/>
+                            <color key="backgroundColor" red="0.23137254900000001" green="0.64313725489999995" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="9hi-kq-Xqj"/>
+                                <constraint firstAttribute="width" constant="239" id="wR3-Hh-Bwd"/>
+                            </constraints>
+                            <state key="normal" title="Upload song">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="UploadSong:" destination="-1" eventType="touchUpInside" id="mGa-8v-nva"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qeO-4M-AYy">
+                            <rect key="frame" x="21" y="121" width="239" height="48"/>
+                            <color key="backgroundColor" red="0.23137254900000001" green="0.64313725489999995" blue="0.62745098040000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="239" id="Ld3-3z-kba"/>
+                                <constraint firstAttribute="height" constant="48" id="R0U-84-hcQ"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="YAs-cZ-cqH"/>
+                                <constraint firstAttribute="width" constant="239" id="lrD-C7-LPT"/>
+                            </constraints>
+                            <state key="normal" title="Delete Parent Song">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="DeleteLinkToParentSong:" destination="-1" eventType="touchUpInside" id="OFA-tk-GW4"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="centerX" secondItem="Ae2-Oa-7cw" secondAttribute="centerX" constant="-1" id="6Ja-r4-s99"/>
+                        <constraint firstItem="Ae2-Oa-7cw" firstAttribute="top" secondItem="hvc-oV-T2b" secondAttribute="bottom" constant="9" id="FgA-DQ-bKB"/>
+                        <constraint firstAttribute="width" constant="279" id="JRi-w3-oRF"/>
+                        <constraint firstAttribute="height" constant="178" id="P7q-qh-Mgy"/>
+                        <constraint firstItem="qeO-4M-AYy" firstAttribute="top" secondItem="Ae2-Oa-7cw" secondAttribute="bottom" constant="8" id="SJM-7a-b1r"/>
+                        <constraint firstItem="hvc-oV-T2b" firstAttribute="top" secondItem="6UK-Se-BOf" secondAttribute="top" constant="5" id="TnU-Sl-xQ4"/>
+                        <constraint firstAttribute="centerX" secondItem="qeO-4M-AYy" secondAttribute="centerX" constant="-1" id="kcI-GU-NsB"/>
+                        <constraint firstAttribute="centerX" secondItem="hvc-oV-T2b" secondAttribute="centerX" constant="-1" id="v8H-bK-SEa"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="6UK-Se-BOf" secondAttribute="centerY" constant="15" id="BB1-9j-iRS"/>
+                <constraint firstAttribute="centerX" secondItem="6UK-Se-BOf" secondAttribute="centerX" id="ce5-HH-LZV"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="400.5" y="246.5"/>
+        </view>
+    </objects>
+</document>
