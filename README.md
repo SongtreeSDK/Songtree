@@ -8,7 +8,7 @@ With Songtree SDK you can simply import into your music app a backing track crea
 
 1)Include Framework Header 
 <pre>
-#import <SongtreeSDK/SongtreeController.h>
+#import &lt;SongtreeSDK/SongtreeController.h&gt;
 </pre>
 
 2)Instantiate the SongtreeController in your main UIViewController
