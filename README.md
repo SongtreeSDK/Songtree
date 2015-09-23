@@ -33,8 +33,24 @@ controller.appAgent=@"your app name";
 </pre>
 
 ## External dependencies (Not needed if you use CocoaPods)
-5)Download OAuth2Client framework and add it to your project
+Download OAuth2Client framework and add it to your project
 https://github.com/nxtbgthng/OAuth2Client
 
 ## CocoaPods
 <pre>pod 'SongtreeSDK', '~> 0.0'</pre>
+
+# LOGIN WITH SOCIAL ACCOUNTS
+ Download Facebook SDK v4.6.0 and Google+ iOS SDK and add them to your project.(Not needed if you use CocoaPods)
+ 
+##Login with Facebook
+To enable FACEBOOK login follow this guide https://developers.facebook.com/docs/ios/getting-started
+ - Create a Facebook App
+ - Configure Facebook App Settings for iOS
+ - Configure Xcode Project
+ 
+##Login with Google Plus
+To enable GOOGLE Plus Login follow this guide https://developers.google.com/+/mobile/ios/getting-started
+ - Create your project on Google Developers Console
+ - Add to your XCode project Google Plus frameworks and in your main UIViewController set
+<pre>	[SongtreeController instance].googlePlusClientID = @"YOUR_CLIENT_ID”;</pre>
+ - Add into your app plist a new URL type with your app bundle ID
