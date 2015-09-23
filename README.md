@@ -28,3 +28,7 @@ controller.appAgent=@"your app name";
 5)Download OAuth2Client framework and add it to your project
 https://github.com/nxtbgthng/OAuth2Client
 
+## CocoaPods
+pod 'SongtreeSDK', '~> 0.0'
+
+
