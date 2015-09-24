@@ -16,7 +16,7 @@ controller.appAgent=@"your app name";
 -(void)OnSongUploadRequested:fromView:parameters:
 
 4)Use the SongtreeController method to show the Community, open the Share View and upload your audio file:
--(void)openSongtreeCommunity:shareAfterUpload:fromViewController:
+-(void)openSongtreeCommunity:
 -(void)OpenUploadPage:
 -(void)uploadToSongtree:parameters:parentViewController:
 
@@ -53,6 +53,13 @@ https://github.com/nxtbgthng/OAuth2Client
 @class UIView;
 @class SongboxProgress;
 
+//After upload you can choose to open Songtree community on the User Account page (Default), or show a popup with the link to the song just uploaded, or do nothing.
+typedef enum {
+    kST_ShowMySongs = 0,
+    kST_ShowClipboard,
+    kST_DoNothing
+} STPostUploadBehaviour;
+
 @protocol SongtreeDelegateProtocol
 
 //Called when some error in the Comminity happens
@@ -72,9 +79,7 @@ https://github.com/nxtbgthng/OAuth2Client
 //uploadToSongtree:parameters:parentViewController:;
 -(void)OnSongUploadRequested: (NSString *)songName fromView: (UIView *)theView parameters: (NSDictionary *)parameters;
 
-
 @optional
-
 -(void)loginInfoUpdated;
 -(void)checkSpinningWheel;
 -(void)initializeMainApp;
@@ -92,18 +97,25 @@ https://github.com/nxtbgthng/OAuth2Client
 }
 @property (retain) id <SongtreeDelegateProtocol> delegate;
 @property (nonatomic, retain) NSString *appAgent;
+@property (nonatomic, assign) STPostUploadBehaviour postUploadBehaviour;
 @property (nonatomic,assign) BOOL debugMode;
 @property (nonatomic,assign) int currentCommunitySection;
 @property (nonatomic, retain) SongboxProgress *songboxProgressView;
+
+//Login with Social Account (Optional)
 @property (nonatomic, retain) NSString *googlePlusClientID;
+@property (nonatomic, retain) NSString *facebookClientID;
+
+//Open the Songtree Main page
+-(void)openSongtreeCommunity:(UIViewController*)parentViewController;
+//Close Songtree main view controller
+-(void)CloseSongtreeCommunity;
+
 //Open the Upload Page
 -(void)OpenUploadPage:(UIViewController*)parentViewController;
 //Use this to pass the m4a audio file path to upload
 -(void)uploadToSongtree:(NSString *)path parameters:(NSDictionary *)parameters parentViewController:(UIViewController*)parentViewController;
-//Open the Songtree Main page
--(void)openSongtreeCommunity:(int)songId shareAfterUpload:(BOOL)mustShare fromViewController:(UIViewController *)parentViewController;
-//Close Songtree main view controller
--(void)CloseSongtreeCommunity;
+
 +(SongtreeController *)instance;
 +(NSBundle *)bundleHandle;
 @end

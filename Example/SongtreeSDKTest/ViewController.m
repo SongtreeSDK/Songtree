@@ -26,9 +26,10 @@ SongtreeController *controller;
     controller.delegate=self;
 
     //Your App Name
-    controller.appAgent=@"";
+    controller.appAgent=@"test";
     
-    controller.googlePlusClientID=@"";
+//    controller.googlePlusClientID=@"your_facebook_app_id";
+//    controller.facebookClientID=@"your_google_app_id";
 
     //YES = DEMO server / NO = PRODUCTION server
 #ifdef DEBUG
