@@ -54,3 +54,23 @@ To enable GOOGLE Plus Login follow this guide https://developers.google.com/+/mo
  - Add to your XCode project Google Plus frameworks and in your main UIViewController set
 <pre>	[SongtreeController instance].googlePlusClientID = @"YOUR_CLIENT_ID”;</pre>
  - Add into your app plist a new URL type with your app bundle ID
+
+
+##iOS9 App Transport Security
+Add to your plist
+
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSExceptionDomains</key>
+        <dict>
+            <key>songtr.ee</key>
+            <dict>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+                <key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+                <true/>
+                <key>NSTemporaryExceptionMinimumTLSVersion</key>
+                <string>TLSv1.1</string>
+            </dict>
+        </dict>
+    </dict>
