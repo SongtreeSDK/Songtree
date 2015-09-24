@@ -26,7 +26,7 @@ SongtreeController *controller;
     controller.delegate=self;
 
     //Your App Name
-    controller.appAgent=@"test";
+    controller.appAgent=@"";
     
 //    controller.googlePlusClientID=@"your_facebook_app_id";
 //    controller.facebookClientID=@"your_google_app_id";
@@ -47,7 +47,7 @@ SongtreeController *controller;
 
 - (IBAction)OpenSongtreeCommunity:(UIButton *)sender
 {
-    [[SongtreeController instance] openSongtreeCommunity:0 shareAfterUpload:NO fromViewController:self];
+    [[SongtreeController instance] openSongtreeCommunity:self];
 }
 
 - (IBAction)UploadSong:(UIButton *)sender
