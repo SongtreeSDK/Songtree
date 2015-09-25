@@ -47,12 +47,14 @@ To enable FACEBOOK login follow this guide https://developers.facebook.com/docs/
  - Create a Facebook App
  - Configure Facebook App Settings for iOS
  - Configure Xcode Project
+<pre>	[SongtreeController instance].facebookClientID = @"YOUR_FAEBOOK_APP_ID”;</pre>
+
  
 ##Login with Google Plus
 To enable GOOGLE Plus Login follow this guide https://developers.google.com/+/mobile/ios/getting-started
  - Create your project on Google Developers Console
  - Add to your XCode project Google Plus frameworks and in your main UIViewController set
-<pre>	[SongtreeController instance].googlePlusClientID = @"YOUR_CLIENT_ID”;</pre>
+<pre>	[SongtreeController instance].googlePlusClientID = @"YOUR_GOOGLE_APP_ID”;</pre>
  - Add into your app plist a new URL type with your app bundle ID
 
 
