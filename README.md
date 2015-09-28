@@ -27,7 +27,7 @@ controller.appAgent=@"your app name";
 
 4)Use the SongtreeController method to show the Community, open the Share View and upload your audio file:
 <pre>
--(void)openSongtreeCommunity:shareAfterUpload:fromViewController:
+-(void)openSongtreeCommunity:
 -(void)OpenUploadPage:
 -(void)uploadToSongtree:parameters:parentViewController:
 </pre>
