@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Lib/Cloudseeder/STMainViewController.mm"
-            timestampString = "464779071.294875"
+            timestampString = "464873507.556886"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "860"
-            endingLineNumber = "860"
+            startingLineNumber = "853"
+            endingLineNumber = "853"
             landmarkName = "-ShareToSocialNetworks:"
             landmarkType = "5">
          </BreakpointContent>
@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Classes/Songtree/SongboxLogin.mm"
-            timestampString = "464711733.933874"
+            timestampString = "464873507.556886"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "909"
-            endingLineNumber = "909"
+            startingLineNumber = "908"
+            endingLineNumber = "908"
             landmarkName = "-doUpload"
             landmarkType = "5">
          </BreakpointContent>
@@ -90,11 +90,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Classes/Songtree/SongboxLogin.mm"
-            timestampString = "464711733.933874"
+            timestampString = "464873507.556886"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1103"
-            endingLineNumber = "1103"
+            startingLineNumber = "1102"
+            endingLineNumber = "1102"
             landmarkName = "-goPressed:"
             landmarkType = "5">
          </BreakpointContent>

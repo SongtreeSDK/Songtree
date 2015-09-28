@@ -23,7 +23,7 @@ s.vendored_frameworks = "SongtreeSDK.framework"
 s.library = 'c++'
 
 
-s.frameworks = "AssetsLibrary", "MessageUI", "Social", "SystemConfiguration", "CFNetwork", "CoreData", "AVFoundation", "CoreLocation", "AddressBook", "CoreMotion", "Twitter", "MediaPlayer"
+s.frameworks = "AssetsLibrary", "MessageUI", "Social", "SystemConfiguration", "CFNetwork", "CoreData", "CoreMedia", "AVFoundation", "CoreLocation", "AddressBook", "CoreMotion", "Twitter", "MediaPlayer"
 
 s.dependency 'NXOAuth2Client', '~> 1.2.0'
 s.dependency 'FBSDKCoreKit', '~> 4.6'

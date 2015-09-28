@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6502AB661BB16642005E458B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6502AB621BB16642005E458B /* LaunchScreen.xib */; settings = {ASSET_TAGS = (); }; };
 		6502AB671BB16642005E458B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6502AB641BB16642005E458B /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		652F6C261BB94BAE009DEC2C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 652F6C251BB94BAE009DEC2C /* CoreMedia.framework */; };
 		657AE6B91B8C712C004398EB /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657AE6B81B8C712C004398EB /* AssetsLibrary.framework */; };
 		65FDA4D21BB164EC0056616A /* SongtreeBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 65FDA4D01BB164EC0056616A /* SongtreeBundle.bundle */; };
 		65FDA4D31BB164EC0056616A /* SongtreeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FDA4D11BB164EC0056616A /* SongtreeSDK.framework */; };
@@ -59,6 +60,7 @@
 /* Begin PBXFileReference section */
 		6502AB631BB16642005E458B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Example/SongtreeSDKTest/Base.lproj/LaunchScreen.xib; sourceTree = SOURCE_ROOT; };
 		6502AB651BB16642005E458B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Example/SongtreeSDKTest/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		652F6C251BB94BAE009DEC2C /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		657AE6B81B8C712C004398EB /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		65FDA4D01BB164EC0056616A /* SongtreeBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SongtreeBundle.bundle; sourceTree = "<group>"; };
 		65FDA4D11BB164EC0056616A /* SongtreeSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SongtreeSDK.framework; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				652F6C261BB94BAE009DEC2C /* CoreMedia.framework in Frameworks */,
 				65FDA5021BB1658E0056616A /* libOAuth2Client.a in Frameworks */,
 				657AE6B91B8C712C004398EB /* AssetsLibrary.framework in Frameworks */,
 				72BCA83F1B726647002B7251 /* MessageUI.framework in Frameworks */,
@@ -135,6 +138,7 @@
 		65C7D9C01B90C41700B40990 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				652F6C251BB94BAE009DEC2C /* CoreMedia.framework */,
 				65FDA4E41BB1651D0056616A /* OAuth2Client.xcodeproj */,
 				657AE6B81B8C712C004398EB /* AssetsLibrary.framework */,
 				72BCA83E1B726647002B7251 /* MessageUI.framework */,
