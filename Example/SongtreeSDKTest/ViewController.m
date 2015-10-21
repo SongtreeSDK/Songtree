@@ -31,6 +31,14 @@ SongtreeController *controller;
 //    controller.googlePlusClientID=@"344554389001926";
     controller.facebookClientID=@"344554389001926";
 
+    [SongtreeController instance].showCloseButton=NO;
+//    [SongtreeController instance].showStartupPage=NO;
+//    [SongtreeController instance].appIcon=[UIImage imageNamed:@"appIcon"];
+//    [SongtreeController instance].hideTutorial=YES;
+//    [SongtreeController instance].showOnlySongsCreatedByApp=YES;
+//    [SongtreeController instance].showLoopsCreatedByApp=YES;
+//    [SongtreeController instance].postUploadBehaviour=kST_ShowClipboard;
+    
     //YES = DEMO server / NO = PRODUCTION server
 #ifdef DEBUG
     controller.debugMode=YES;
@@ -91,7 +99,7 @@ SongtreeController *controller;
     //Your mixdown audio file - Should be m4a
     NSString *path=[[NSBundle mainBundle] pathForResource:@"testSong" ofType:@"m4a"];
     
-    [[SongtreeController instance] uploadToSongtree:path parameters:parameters parentViewController:self];
+    [[SongtreeController instance] uploadToSongtree:path parameters:parameters parentViewController:self isLoop:NO];
 }
 
 @end

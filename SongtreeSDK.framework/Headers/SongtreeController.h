@@ -18,7 +18,7 @@ controller.appAgent=@"your app name";
 4)Use the SongtreeController method to show the Community, open the Share View and upload your audio file:
 -(void)openSongtreeCommunity:
 -(void)OpenUploadPage:
--(void)uploadToSongtree:parameters:parentViewController:
+-(void)uploadToSongtree:parameters:parentViewController:isLoop:
 
 5)Download OAuth2Client framework and add it to your project
 https://github.com/nxtbgthng/OAuth2Client
@@ -51,6 +51,7 @@ https://github.com/nxtbgthng/OAuth2Client
 
 @class UIViewController;
 @class UIView;
+@class UIImage;
 @class SongboxProgress;
 
 //After upload you can choose to open Songtree community on the User Account page (Default), or show a popup with the link to the song just uploaded, or do nothing.
@@ -83,6 +84,7 @@ typedef enum {
 -(void)loginInfoUpdated;
 -(void)checkSpinningWheel;
 -(void)initializeMainApp;
+-(void)appShouldStartNewSession;
 -(void)addProgressView:(UIView *)theView fromView:(UIView *)myView;
 -(void)onCommunityViewAppeared;
 -(void)onCommunityViewDisappeared;
@@ -95,26 +97,49 @@ typedef enum {
 {
     
 }
+
+//MANDATORY SETTINGS
 @property (retain) id <SongtreeDelegateProtocol> delegate;
+@property (retain) UIViewController *parentViewController; 
 @property (nonatomic, retain) NSString *appAgent;
+
+//OPTIONAL SETTINGS
+//Choose what you want to do after use upload a song (Open the Community to User section, Copy the link to the just uploaded song into clipboard, Do nothing)
 @property (nonatomic, assign) STPostUploadBehaviour postUploadBehaviour;
-@property (nonatomic,assign) BOOL debugMode;
-@property (nonatomic,assign) int currentCommunitySection;
+//Show the startup page
+@property (nonatomic, assign) BOOL showStartupPage;
+//Change the green record button into a close button
+@property (nonatomic, assign) BOOL showCloseButton;
+//Show only the songs created by your app
+@property (nonatomic, assign) BOOL showOnlySongsCreatedByApp;
+//Show a section with the loop uploaded by your app
+@property (nonatomic, assign) BOOL showLoopsCreatedByApp;
+//Used only if showLoopsCreatedByApp=true
+@property (nonatomic, retain) UIImage *appIcon;
+//Hide info section and the startup tutorial
+@property (nonatomic, assign) BOOL hideTutorial;
+//Enable demo server
+@property (nonatomic, assign) BOOL debugMode;
+
+@property (nonatomic, assign) int currentCommunitySection;
 @property (nonatomic, retain) SongboxProgress *songboxProgressView;
 
 //Login with Social Account (Optional)
 @property (nonatomic, retain) NSString *googlePlusClientID;
 @property (nonatomic, retain) NSString *facebookClientID;
 
+
 //Open the Songtree Main page
 -(void)openSongtreeCommunity:(UIViewController*)parentViewController;
 //Close Songtree main view controller
 -(void)CloseSongtreeCommunity;
 
+//Open Startup Menu
+-(void)openSongtreeStartupMenu:(UIViewController*)parentViewController;
 //Open the Upload Page
 -(void)OpenUploadPage:(UIViewController*)parentViewController;
 //Use this to pass the m4a audio file path to upload
--(void)uploadToSongtree:(NSString *)path parameters:(NSDictionary *)parameters parentViewController:(UIViewController*)parentViewController;
+-(void)uploadToSongtree:(NSString *)path parameters:(NSDictionary *)parameters parentViewController:(UIViewController*)parentViewController isLoop:(BOOL)isLoop;
 
 +(SongtreeController *)instance;
 +(NSBundle *)bundleHandle;

@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "SongtreeSDK"
-s.version      = "0.0.5"
+s.version      = "0.0.6"
 s.summary      = "Songtree SDK for iOS"
 
 s.description  = "Songtree is an online community for collaborative music making"
@@ -15,7 +15,7 @@ s.license      = { :type => "Apache License, Version 2.0" , :file =>"License" }
 s.author             = "Songtree"
 s.platform     = :ios, "7.0"
 
-s.source       = { :git => "https://github.com/SongtreeSDK/Songtree.git", :tag => "0.0.5" }
+s.source       = { :git => "https://github.com/SongtreeSDK/Songtree.git", :tag => "0.0.6" }
 
 
 s.resource  = "SongtreeBundle.bundle"

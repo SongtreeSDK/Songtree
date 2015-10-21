@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "SongtreeSDK/SongtreeController.h"
-
 @interface ViewController : UIViewController <SongtreeDelegateProtocol>
 
 - (IBAction)OpenSongtreeCommunity:(UIButton *)sender;
