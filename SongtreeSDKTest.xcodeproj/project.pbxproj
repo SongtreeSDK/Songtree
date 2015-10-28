@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6502AB661BB16642005E458B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6502AB621BB16642005E458B /* LaunchScreen.xib */; settings = {ASSET_TAGS = (); }; };
-		6502AB671BB16642005E458B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6502AB641BB16642005E458B /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		6502AB661BB16642005E458B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6502AB621BB16642005E458B /* LaunchScreen.xib */; };
+		6502AB671BB16642005E458B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6502AB641BB16642005E458B /* Main.storyboard */; };
 		652F6C261BB94BAE009DEC2C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 652F6C251BB94BAE009DEC2C /* CoreMedia.framework */; };
 		657AE6B91B8C712C004398EB /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657AE6B81B8C712C004398EB /* AssetsLibrary.framework */; };
+		65D383351BE0D67E00D13EA4 /* songTreeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D383341BE0D67E00D13EA4 /* songTreeIcon.png */; };
 		65FDA4D21BB164EC0056616A /* SongtreeBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 65FDA4D01BB164EC0056616A /* SongtreeBundle.bundle */; };
 		65FDA4D31BB164EC0056616A /* SongtreeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FDA4D11BB164EC0056616A /* SongtreeSDK.framework */; };
 		65FDA4DD1BB165060056616A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 65FDA4D51BB165060056616A /* AppDelegate.mm */; };
@@ -62,6 +63,7 @@
 		6502AB651BB16642005E458B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Example/SongtreeSDKTest/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		652F6C251BB94BAE009DEC2C /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		657AE6B81B8C712C004398EB /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		65D383341BE0D67E00D13EA4 /* songTreeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = songTreeIcon.png; path = ../../../Graphics/iOS/Songbox/songTreeIcon.png; sourceTree = "<group>"; };
 		65FDA4D01BB164EC0056616A /* SongtreeBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SongtreeBundle.bundle; sourceTree = "<group>"; };
 		65FDA4D11BB164EC0056616A /* SongtreeSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SongtreeSDK.framework; sourceTree = "<group>"; };
 		65FDA4D41BB165060056616A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Example/SongtreeSDKTest/AppDelegate.h; sourceTree = SOURCE_ROOT; };
@@ -207,6 +209,7 @@
 				65FDA4D61BB165060056616A /* Images.xcassets */,
 				65FDA4D71BB165060056616A /* Info.plist */,
 				65FDA4D81BB165060056616A /* main.m */,
+				65D383341BE0D67E00D13EA4 /* songTreeIcon.png */,
 				65FDA4D91BB165060056616A /* testSong.m4a */,
 				65FDA4DA1BB165060056616A /* ViewController.h */,
 				65FDA4DB1BB165060056616A /* ViewController.m */,
@@ -292,6 +295,7 @@
 			files = (
 				65FDA4DF1BB165060056616A /* Info.plist in Resources */,
 				65FDA4DE1BB165060056616A /* Images.xcassets in Resources */,
+				65D383351BE0D67E00D13EA4 /* songTreeIcon.png in Resources */,
 				65FDA4E11BB165060056616A /* testSong.m4a in Resources */,
 				6502AB671BB16642005E458B /* Main.storyboard in Resources */,
 				6502AB661BB16642005E458B /* LaunchScreen.xib in Resources */,

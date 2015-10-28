@@ -26,17 +26,17 @@ SongtreeController *controller;
     controller.delegate=self;
 
     //Your App Name
-    controller.appAgent=@"test";
+    controller.appAgent=@"testApp";
     
 //    controller.googlePlusClientID=@"344554389001926";
     controller.facebookClientID=@"344554389001926";
 
-    [SongtreeController instance].showCloseButton=NO;
-//    [SongtreeController instance].showStartupPage=NO;
-//    [SongtreeController instance].appIcon=[UIImage imageNamed:@"appIcon"];
-//    [SongtreeController instance].hideTutorial=YES;
+    [SongtreeController instance].showCloseButton=YES;
+    [SongtreeController instance].showStartupPage=NO;
+    [SongtreeController instance].appIcon=[UIImage imageNamed:@"songTreeIcon"];
+    [SongtreeController instance].hideTutorial=YES;
 //    [SongtreeController instance].showOnlySongsCreatedByApp=YES;
-//    [SongtreeController instance].showLoopsCreatedByApp=YES;
+    [SongtreeController instance].showLoopsCreatedByApp=YES;
 //    [SongtreeController instance].postUploadBehaviour=kST_ShowClipboard;
     
     //YES = DEMO server / NO = PRODUCTION server

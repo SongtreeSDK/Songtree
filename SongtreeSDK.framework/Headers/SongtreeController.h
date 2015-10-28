@@ -118,6 +118,8 @@ typedef enum {
 @property (nonatomic, retain) UIImage *appIcon;
 //Hide info section and the startup tutorial
 @property (nonatomic, assign) BOOL hideTutorial;
+//Support mail
+@property (nonatomic, assign) NSString *ccSupportEmail;
 //Enable demo server
 @property (nonatomic, assign) BOOL debugMode;
 
