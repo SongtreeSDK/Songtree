@@ -143,6 +143,9 @@ typedef enum {
 //Use this to pass the m4a audio file path to upload
 -(void)uploadToSongtree:(NSString *)path parameters:(NSDictionary *)parameters parentViewController:(UIViewController*)parentViewController isLoop:(BOOL)isLoop;
 
+//Open the community on a specific song
+-(void)OpenSong:(int)songID :(UIViewController*)parentViewController;
+
 +(SongtreeController *)instance;
 +(NSBundle *)bundleHandle;
 @end

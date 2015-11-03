@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Lib/Cloudseeder/STMainViewController.mm"
-            timestampString = "464873507.556886"
+            timestampString = "467833702.638552"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "853"
-            endingLineNumber = "853"
+            startingLineNumber = "854"
+            endingLineNumber = "854"
             landmarkName = "-collabButtonPressed:"
             landmarkType = "5">
          </BreakpointContent>
@@ -170,11 +170,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../SongtreeSDK/SongtreeController.mm"
-            timestampString = "467041224.651492"
+            timestampString = "467833702.638552"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "376"
-            endingLineNumber = "376"
+            startingLineNumber = "383"
+            endingLineNumber = "383"
             landmarkName = "-CloseSongtreeCommunity"
             landmarkType = "5">
          </BreakpointContent>
@@ -218,11 +218,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Lib/Cloudseeder/STSongtree.mm"
-            timestampString = "467637099.940122"
+            timestampString = "467833702.638552"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1117"
-            endingLineNumber = "1117"
+            startingLineNumber = "1110"
+            endingLineNumber = "1110"
             landmarkName = "-requestGenreList:::"
             landmarkType = "5">
             <Locations>
@@ -234,11 +234,11 @@
                   moduleName = "SongtreeSDKTest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/andrea/nTrack/trunk/n-Track_EX/iOS/Lib/Cloudseeder/STSongtree.mm"
-                  timestampString = "467722460.573665"
+                  timestampString = "467834039.541309"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "1118"
-                  endingLineNumber = "1118"
+                  startingLineNumber = "1112"
+                  endingLineNumber = "1112"
                   offsetFromSymbolStart = "440">
                </Location>
                <Location
@@ -249,11 +249,11 @@
                   moduleName = "SongtreeSDKTest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/andrea/nTrack/trunk/n-Track_EX/iOS/Lib/Cloudseeder/STSongtree.mm"
-                  timestampString = "467722460.574218"
+                  timestampString = "467834039.541797"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "1119"
-                  endingLineNumber = "1119"
+                  startingLineNumber = "1113"
+                  endingLineNumber = "1113"
                   offsetFromSymbolStart = "47">
                </Location>
             </Locations>
@@ -266,29 +266,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../Lib/Cloudseeder/STSongtree.mm"
-            timestampString = "467637111.008255"
+            timestampString = "467833702.638552"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1131"
-            endingLineNumber = "1131"
+            startingLineNumber = "1124"
+            endingLineNumber = "1124"
             landmarkName = "-requestGenreList:::"
             landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../Lib/Cloudseeder/STSongtree.mm"
-            timestampString = "467640024.275289"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "1563"
-            endingLineNumber = "1563"
-            landmarkName = "CheckServerDownloaded(UIViewController *delegate)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -310,6 +294,54 @@
                   offsetFromSymbolStart = "0">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Lib/Cloudseeder/STSongtree.mm"
+            timestampString = "467833803.606896"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1570"
+            endingLineNumber = "1570"
+            landmarkName = "-requestServerList:completion:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Lib/Cloudseeder/STSongtree.mm"
+            timestampString = "467834247.295121"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1553"
+            endingLineNumber = "1553"
+            landmarkName = "CheckServerListDownloaded(UIViewController *delegate, bool refreshMainView)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../Lib/Cloudseeder/STSongtree.mm"
+            timestampString = "467834252.623431"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "1580"
+            endingLineNumber = "1580"
+            landmarkName = "-requestServerList:completion:"
+            landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -26,7 +26,7 @@ SongtreeController *controller;
     controller.delegate=self;
 
     //Your App Name
-    controller.appAgent=@"testApp";
+    controller.appAgent=@"LoopTree";
     
 //    controller.googlePlusClientID=@"344554389001926";
     controller.facebookClientID=@"344554389001926";
@@ -35,7 +35,7 @@ SongtreeController *controller;
     [SongtreeController instance].showStartupPage=NO;
     [SongtreeController instance].appIcon=[UIImage imageNamed:@"songTreeIcon"];
     [SongtreeController instance].hideTutorial=YES;
-//    [SongtreeController instance].showOnlySongsCreatedByApp=YES;
+    [SongtreeController instance].showOnlySongsCreatedByApp=YES;
     [SongtreeController instance].showLoopsCreatedByApp=YES;
 //    [SongtreeController instance].postUploadBehaviour=kST_ShowClipboard;
     
