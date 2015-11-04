@@ -26,7 +26,7 @@ SongtreeController *controller;
     controller.delegate=self;
 
     //Your App Name
-    controller.appAgent=@"LoopTree";
+    controller.appAgent=@"testApp";
     
 //    controller.googlePlusClientID=@"344554389001926";
     controller.facebookClientID=@"344554389001926";
