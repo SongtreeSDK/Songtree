@@ -51,11 +51,12 @@ To enable FACEBOOK login follow this guide https://developers.facebook.com/docs/
 
  
 ##Login with Google Plus
-To enable GOOGLE Plus Login follow this guide https://developers.google.com/+/mobile/ios/getting-started
- - Create your project on Google Developers Console
- - Add to your XCode project Google Plus frameworks and in your main UIViewController set
+To enable GOOGLE Plus Login follow this guide https://developers.google.com/identity/sign-in/ios/sdk/
+- Add to your XCode project Google Plus frameworks and in your main UIViewController set
 <pre>	[SongtreeController instance].googlePlusClientID = @"YOUR_GOOGLE_APP_ID”;</pre>
- - Add into your app plist a new URL type with your app bundle ID
+- Get a configuration file on Google Developers Console
+- In the Project > Target > Info > URL Types panel, create a new item and paste your REVERSED_CLIENT_ID into the URL Schemes field. You can find your REVERSED_CLIENT_ID in the GoogleService-Info.plist file.
+  Also in the Project > Target > Info > URL Types panel, create a new item and type your bundle identifier in the URL Schemes field.
 
 
 ##iOS9 App Transport Security

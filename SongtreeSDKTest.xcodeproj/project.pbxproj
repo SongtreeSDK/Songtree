@@ -11,6 +11,10 @@
 		6502AB671BB16642005E458B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6502AB641BB16642005E458B /* Main.storyboard */; };
 		652F6C261BB94BAE009DEC2C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 652F6C251BB94BAE009DEC2C /* CoreMedia.framework */; };
 		657AE6B91B8C712C004398EB /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657AE6B81B8C712C004398EB /* AssetsLibrary.framework */; };
+		65ADE5871C63708A00672F99 /* GoogleSignIn.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 65ADE5851C63708A00672F99 /* GoogleSignIn.bundle */; };
+		65ADE5881C63708A00672F99 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65ADE5861C63708A00672F99 /* GoogleSignIn.framework */; };
+		65ADE58A1C6370D300672F99 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65ADE5891C6370D300672F99 /* StoreKit.framework */; };
+		65ADE58C1C63724800672F99 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 65ADE58B1C63724800672F99 /* libz.tbd */; };
 		65D383351BE0D67E00D13EA4 /* songTreeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 65D383341BE0D67E00D13EA4 /* songTreeIcon.png */; };
 		65FDA4D21BB164EC0056616A /* SongtreeBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 65FDA4D01BB164EC0056616A /* SongtreeBundle.bundle */; };
 		65FDA4D31BB164EC0056616A /* SongtreeSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65FDA4D11BB164EC0056616A /* SongtreeSDK.framework */; };
@@ -63,6 +67,10 @@
 		6502AB651BB16642005E458B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Example/SongtreeSDKTest/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		652F6C251BB94BAE009DEC2C /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		657AE6B81B8C712C004398EB /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		65ADE5851C63708A00672F99 /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleSignIn.bundle; path = "../../../../../Devel/google-plus-ios-sdk-1.7.1/GoogleSignIn.bundle"; sourceTree = "<group>"; };
+		65ADE5861C63708A00672F99 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignIn.framework; path = "../../../../../Devel/google-plus-ios-sdk-1.7.1/GoogleSignIn.framework"; sourceTree = "<group>"; };
+		65ADE5891C6370D300672F99 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		65ADE58B1C63724800672F99 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		65D383341BE0D67E00D13EA4 /* songTreeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = songTreeIcon.png; path = ../../../Graphics/iOS/Songbox/songTreeIcon.png; sourceTree = "<group>"; };
 		65FDA4D01BB164EC0056616A /* SongtreeBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SongtreeBundle.bundle; sourceTree = "<group>"; };
 		65FDA4D11BB164EC0056616A /* SongtreeSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SongtreeSDK.framework; sourceTree = "<group>"; };
@@ -102,6 +110,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65ADE58C1C63724800672F99 /* libz.tbd in Frameworks */,
+				65ADE58A1C6370D300672F99 /* StoreKit.framework in Frameworks */,
 				652F6C261BB94BAE009DEC2C /* CoreMedia.framework in Frameworks */,
 				65FDA5021BB1658E0056616A /* libOAuth2Client.a in Frameworks */,
 				657AE6B91B8C712C004398EB /* AssetsLibrary.framework in Frameworks */,
@@ -109,6 +119,7 @@
 				72BCA8391B7265E3002B7251 /* Social.framework in Frameworks */,
 				72BCA8371B7265C1002B7251 /* SystemConfiguration.framework in Frameworks */,
 				65FDA4FE1BB165530056616A /* FBSDKMessengerShareKit.framework in Frameworks */,
+				65ADE5881C63708A00672F99 /* GoogleSignIn.framework in Frameworks */,
 				65FDA4EF1BB165320056616A /* GooglePlus.framework in Frameworks */,
 				72BCA8331B72656E002B7251 /* CoreData.framework in Frameworks */,
 				72BCA7F11B725E90002B7251 /* AVFoundation.framework in Frameworks */,
@@ -140,27 +151,31 @@
 		65C7D9C01B90C41700B40990 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				652F6C251BB94BAE009DEC2C /* CoreMedia.framework */,
-				65FDA4E41BB1651D0056616A /* OAuth2Client.xcodeproj */,
+				65ADE58B1C63724800672F99 /* libz.tbd */,
+				72BCA7EC1B725E63002B7251 /* AddressBook.framework */,
 				657AE6B81B8C712C004398EB /* AssetsLibrary.framework */,
-				72BCA83E1B726647002B7251 /* MessageUI.framework */,
-				72BCA8381B7265E3002B7251 /* Social.framework */,
-				72BCA8361B7265C1002B7251 /* SystemConfiguration.framework */,
+				72BCA7F01B725E90002B7251 /* AVFoundation.framework */,
 				72BCA8341B72658B002B7251 /* CFNetwork.framework */,
+				72BCA8321B72656E002B7251 /* CoreData.framework */,
+				72BCA7EE1B725E74002B7251 /* CoreLocation.framework */,
+				652F6C251BB94BAE009DEC2C /* CoreMedia.framework */,
+				72BCA7EA1B725E5A002B7251 /* CoreMotion.framework */,
 				65FDA4F81BB165530056616A /* FBSDKCoreKit.framework */,
 				65FDA4F91BB165530056616A /* FBSDKLoginKit.framework */,
 				65FDA4FA1BB165530056616A /* FBSDKMessengerShareKit.framework */,
 				65FDA4FB1BB165530056616A /* FBSDKShareKit.framework */,
-				72BCA8321B72656E002B7251 /* CoreData.framework */,
 				65FDA4EA1BB165320056616A /* GoogleOpenSource.framework */,
 				65FDA4EB1BB165320056616A /* GooglePlus.bundle */,
 				65FDA4EC1BB165320056616A /* GooglePlus.framework */,
-				72BCA7F01B725E90002B7251 /* AVFoundation.framework */,
-				72BCA7EE1B725E74002B7251 /* CoreLocation.framework */,
-				72BCA7EC1B725E63002B7251 /* AddressBook.framework */,
-				72BCA7EA1B725E5A002B7251 /* CoreMotion.framework */,
-				72BCA7E81B725E50002B7251 /* Twitter.framework */,
+				65ADE5851C63708A00672F99 /* GoogleSignIn.bundle */,
+				65ADE5861C63708A00672F99 /* GoogleSignIn.framework */,
 				72BCA7E61B725E47002B7251 /* MediaPlayer.framework */,
+				72BCA83E1B726647002B7251 /* MessageUI.framework */,
+				65FDA4E41BB1651D0056616A /* OAuth2Client.xcodeproj */,
+				72BCA8381B7265E3002B7251 /* Social.framework */,
+				65ADE5891C6370D300672F99 /* StoreKit.framework */,
+				72BCA8361B7265C1002B7251 /* SystemConfiguration.framework */,
+				72BCA7E81B725E50002B7251 /* Twitter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -299,6 +314,7 @@
 				65FDA4E11BB165060056616A /* testSong.m4a in Resources */,
 				6502AB671BB16642005E458B /* Main.storyboard in Resources */,
 				6502AB661BB16642005E458B /* LaunchScreen.xib in Resources */,
+				65ADE5871C63708A00672F99 /* GoogleSignIn.bundle in Resources */,
 				65FDA4E31BB165060056616A /* ViewController.xib in Resources */,
 				65FDA4EE1BB165320056616A /* GooglePlus.bundle in Resources */,
 				65FDA4D21BB164EC0056616A /* SongtreeBundle.bundle in Resources */,
